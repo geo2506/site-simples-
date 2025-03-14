@@ -1,46 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Simples</title>
-<style>
-    /*definição do estilo da página*/
-    body{
-        font-family: Arial, Helvetica, sans-serif;/*definir a fonte do texto*/
-        text-align: center;/*centraliza o texto da página*/
-        margin:50px;/*definir uma margem ao redor do conteúdo*/
-        background-color:#c531ac;/*definir a cor de fundo padrão*/
-    }
+    <style>
+        /*Definição do estilo da página*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;/*Definir a fonte do texto*/
+            text-align: center;/*Centralizar o texto na página*/
+            margin:50px; /*Definir uma margem ao redor do conteúdo*/
+            background-color: #f4f4f4; /*Definir a cor de fundo padrão*/
+        }
+       
+        /*Etilizar o botão*/
+        button{
+            padding: 10px 20px;/*Definir o tamanho botão*/
+            font-size: 16px;/*Define o tamanho da fonte do botão*/
+            cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+            background-color: blue; /* Define a cor de fundo do botão */
+           
 
-/*etilizar o botao*/
-button{
-    padding:10px 20px;/*definir o */
-    font: size 16px;/*define o tamanho*/ 
-    cursor:pointer;/*define o */
-    background-color: rgb(4, 10, 31);/*define a cor do */
-    color:rgba(238, 232, 224, 0);/*definir a cor do texto do botao */
-    border: none;/*remover a borda do botao*/
-    border-radius: 5px;/*adiciona os cantos arredondados ao botao/*
-
-}
-
-</style>
-</head
->
+        }
+    </style>
+   
+</head>
 <body>
-<!-- 
     <!--Título principal da página-->
     <h1>Bem-vindos ao meu Site Simples</h1>
 
     <!--Botão que mudará a cor de fundo da nossa página-->
     <button onclick="mudarCor()">Mudar Cor de Fundo</button>
+    <script>
+        // Função JavaScript para mudar a cor de fundo da página
+        function mudarCor() {
+            // Gera uma cor aleatória em formato hexadecimal
+            var corAleatoria = '#' + Math.floor(Math.random()*16777215).toString(16);
+            // Aplica a nova cor ao fundo da página
+            document.body.style.backgroundColor = corAleatoria;
+        }
     </script>
-       //funcao javascript para mudar a cor da pagina
-    function mudarcor(){
-    }
-    //gerar uma cor aleatoria
-    var
-    </script>
+
 </body>
 </html>
